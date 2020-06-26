@@ -87,7 +87,6 @@ input[type="radio"].visually-hidden {
 .inner-page .main-navigation {
     align-items: flex-start;
     flex-direction: row;
-
     min-height: 70px;
 }
 
