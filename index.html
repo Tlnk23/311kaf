@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     
 </head>
 <body>
@@ -28,7 +29,7 @@
             </div>
         </nav>
     </header>
-    <a class="main-header-logo" href='https://mai.ru/' target="_blank">
+    <a class="main-header-logo" href='https://mai.ru/' target="_blank" id="head-page">
         <img src="img/mai.png" width="300" height="160" alt="">
     </a>
     <main class="container">
@@ -144,5 +145,15 @@
 
    
     </main>
+    <script>
+        $(document).ready(function(){
+            $('a[href^="#"], *[data-href^="#"]').on('click', function(e){
+                e.preventDefault();
+                var t = 1000;
+                var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
+                $('html,body').stop().animate({ scrollTop: $(d).offset().top }, t);
+            });
+        });
+        </script>
 </body>
 </html>
