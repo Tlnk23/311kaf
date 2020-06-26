@@ -73,7 +73,6 @@ input[type="radio"].visually-hidden {
 }
 
 .main-navigation {
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,7 +81,7 @@ input[type="radio"].visually-hidden {
     line-height: 20px;
     color: #ffffff;
 
-    min-height: 285px;
+    min-height: 100px;
 }
 
 .inner-page .main-navigation {
@@ -95,6 +94,8 @@ input[type="radio"].visually-hidden {
 
 
 .main-header {
+    position: sticky;
+    top: 0;
     margin-bottom: 70px;
 }
 
@@ -103,7 +104,9 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header-logo {
-    order: 2;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
 }
 
 .main-header-logo img:focus,
@@ -209,6 +212,7 @@ input[type="radio"].visually-hidden {
 }
 
 .index-columns__education {
+    padding-top: 70px;
     padding-bottom: 0;
 }
 
