@@ -20,7 +20,7 @@ body {
     color: #000000;
 
     background-color: #f9f6f3;
-    background-image: url(../img/pattern-light.jpg);
+    background-image: url(../img/pattern/pattern-light.jpg);
     background-position: 0 0;
     background-repeat: repeat;
 }
@@ -197,7 +197,7 @@ input[type="radio"].visually-hidden {
     background-color: #f8f5f2;
     background-image: 
         
-        url(../img/pattern-light.jpg);
+        url(../img/pattern/pattern-light.jpg);
     background-position: center, 0 0;
     background-repeat: no-repeat, repeat;
 }
